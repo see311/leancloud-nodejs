@@ -1,8 +1,8 @@
 const AV = require('leancloud-storage')
 
 AV.init({
-  appId: process.env.LEANCLOUD_APP_ID || 'UWHu3d90DN5PzYbXknr5deJA-gzGzoHsz',
-  appKey: process.env.LEANCLOUD_APP_KEY || 'myMByAL64VApDxsanVtwLhrW',
+  appId: process.env.LEANCLOUD_APP_ID,
+  appKey: process.env.LEANCLOUD_APP_KEY,
 })
 
 const app = require('./app')
