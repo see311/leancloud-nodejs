@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "server in nodejs",
   "main": "server.js",
+  "engines": {
+    "node":"8.x"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
