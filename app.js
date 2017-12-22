@@ -6,6 +6,7 @@ const AV = require('leanengine')
 
 app.use(koaBody())
 app.use(AV.koa())
+// app.use(timeout('15s'));
 
 app.use(Ctrl.get('/', async (ctx) => {
   ctx.body = await 'hello';

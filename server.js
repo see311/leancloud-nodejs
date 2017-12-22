@@ -21,6 +21,8 @@ app.listen(PORT, err => {
   });
 })
 
+console.log(process.env.PORT)
+
 // leancloud-storage 写入测试代码
 // var TestObject = AV.Object.extend('TestObject');
 // var testObject = new TestObject();
