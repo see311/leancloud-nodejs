@@ -223,9 +223,8 @@ var start = function () {
                 console.error('Unhandled Rejection at: Promise ', p, ' reason: ', reason.stack);
               });
             });
-            console.log('Server listening on port:' + port); // eslint-disable-line no-console
 
-          case 14:
+          case 13:
           case 'end':
             return _context2.stop();
         }

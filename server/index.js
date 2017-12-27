@@ -50,7 +50,6 @@ async function start() {
       console.error('Unhandled Rejection at: Promise ', p, ' reason: ', reason.stack);
     });
   })
-  console.log('Server listening on port:' + port) // eslint-disable-line no-console
 }
 
 start()
