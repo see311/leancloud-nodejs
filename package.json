@@ -4,6 +4,9 @@
   "description": "Nuxt.js project",
   "author": "wangze <wangze@embway.com>",
   "private": true,
+  "engines": {
+    "node": "8.x"
+  },
   "scripts": {
     "dev": "backpack dev",
     "build": "nuxt build && backpack build",
