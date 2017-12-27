@@ -43,11 +43,6 @@ async function start() {
 
   app.listen(port, host)
   console.log('Server listening on ' + host + ':' + port) // eslint-disable-line no-console
-
-  const TestObject = leanstorage.Object.extend('TestObject');
-  const testObject = new TestObject();
-  await testObject.save({ words: 'Hello World!' });
-  console.log('LeanCloud Rocks!');
 }
 
 start()

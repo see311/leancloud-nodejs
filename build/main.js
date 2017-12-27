@@ -150,7 +150,7 @@ var start = function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_D_works_leancloud_leancloud_nodejs_node_modules_babel_runtime_regenerator___default.a.mark(function _callee2() {
     var _this = this;
 
-    var app, host, port, config, nuxt, builder, TestObject, testObject;
+    var app, host, port, config, nuxt, builder;
     return __WEBPACK_IMPORTED_MODULE_0_D_works_leancloud_leancloud_nodejs_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
       while (1) {
         switch (_context2.prev = _context2.next) {
@@ -224,15 +224,7 @@ var start = function () {
             app.listen(port, host);
             console.log('Server listening on ' + host + ':' + port); // eslint-disable-line no-console
 
-            TestObject = __WEBPACK_IMPORTED_MODULE_4_leancloud_storage__["Object"].extend('TestObject');
-            testObject = new TestObject();
-            _context2.next = 19;
-            return testObject.save({ words: 'Hello World!' });
-
-          case 19:
-            console.log('LeanCloud Rocks!');
-
-          case 20:
+          case 15:
           case 'end':
             return _context2.stop();
         }
