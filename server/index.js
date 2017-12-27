@@ -1,10 +1,9 @@
 import Koa from 'koa'
 import { Nuxt, Builder } from 'nuxt'
-import * as leanengine from "leanengine";
-import * as leanstorage from "leancloud-storage";
+import * as AV from "leanengine";
 
 async function start() {
-  leanengine.init({
+  AV.init({
     appId: process.env.LEANCLOUD_APP_ID,
     appKey: process.env.LEANCLOUD_APP_KEY,
     masterKey: process.env.LEANCLOUD_APP_MASTER_KEY
@@ -23,10 +22,10 @@ async function start() {
   // Build in development
   if (config.dev) {
     const builder = new Builder(nuxt)
-    await new Builder(nuxt).build()
+    await builder.build()
   }
 
-  app.use(leanengine.koa())
+  app.use(AV.koa())
   app.use(async (ctx, next) => {
     await next()
     ctx.status = 200 // koa defaults to 404 when it sees that status is unset

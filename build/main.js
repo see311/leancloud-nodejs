@@ -65,7 +65,7 @@ module.exports =
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -95,7 +95,7 @@ module.exports = {
 /* 1 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(6);
+module.exports = __webpack_require__(5);
 
 
 /***/ },
@@ -108,28 +108,22 @@ module.exports = require("koa");
 /* 3 */
 /***/ function(module, exports) {
 
-module.exports = require("leancloud-storage");
+module.exports = require("leanengine");
 
 /***/ },
 /* 4 */
 /***/ function(module, exports) {
 
-module.exports = require("leanengine");
+module.exports = require("nuxt");
 
 /***/ },
 /* 5 */
 /***/ function(module, exports) {
 
-module.exports = require("nuxt");
-
-/***/ },
-/* 6 */
-/***/ function(module, exports) {
-
 module.exports = require("regenerator-runtime");
 
 /***/ },
-/* 7 */
+/* 6 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -138,12 +132,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_D_works_leancloud_leancloud_nodejs_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_D_works_leancloud_leancloud_nodejs_node_modules_babel_runtime_regenerator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_koa__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_koa___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_koa__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_nuxt__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_nuxt__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_nuxt___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_nuxt__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_leanengine__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_leanengine__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_leanengine___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_leanengine__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_leancloud_storage__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_leancloud_storage___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_leancloud_storage__);
 
 
 var start = function () {
@@ -182,7 +174,7 @@ var start = function () {
 
             builder = new __WEBPACK_IMPORTED_MODULE_2_nuxt__["Builder"](nuxt);
             _context2.next = 10;
-            return new __WEBPACK_IMPORTED_MODULE_2_nuxt__["Builder"](nuxt).build();
+            return builder.build();
 
           case 10:
 
@@ -237,7 +229,6 @@ var start = function () {
 }();
 
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
-
 
 
 
