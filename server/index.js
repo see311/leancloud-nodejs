@@ -11,7 +11,6 @@ async function start() {
   })
 
   const app = new Koa()
-  const host = process.env.HOST || '0.0.0.0' || '127.0.0.1'
   const port = parseInt(process.env.LEANCLOUD_APP_PORT || process.env.PORT || 3000)
 
   // Import and Set Nuxt.js options
@@ -41,8 +40,8 @@ async function start() {
     })
   })
 
-  app.listen(port, host)
-  console.log('Server listening on ' + host + ':' + port) // eslint-disable-line no-console
+  app.listen(port)
+  console.log('Server listening on port:' + port) // eslint-disable-line no-console
 }
 
 start()

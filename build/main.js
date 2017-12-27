@@ -150,7 +150,7 @@ var start = function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_D_works_leancloud_leancloud_nodejs_node_modules_babel_runtime_regenerator___default.a.mark(function _callee2() {
     var _this = this;
 
-    var app, host, port, config, nuxt, builder;
+    var app, port, config, nuxt, builder;
     return __WEBPACK_IMPORTED_MODULE_0_D_works_leancloud_leancloud_nodejs_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
       while (1) {
         switch (_context2.prev = _context2.next) {
@@ -162,7 +162,6 @@ var start = function () {
             });
 
             app = new __WEBPACK_IMPORTED_MODULE_1_koa___default.a();
-            host = process.env.HOST || '0.0.0.0' || '127.0.0.1';
             port = parseInt(process.env.LEANCLOUD_APP_PORT || process.env.PORT || 3000);
 
             // Import and Set Nuxt.js options
@@ -177,15 +176,15 @@ var start = function () {
             // Build in development
 
             if (!config.dev) {
-              _context2.next = 11;
+              _context2.next = 10;
               break;
             }
 
             builder = new __WEBPACK_IMPORTED_MODULE_2_nuxt__["Builder"](nuxt);
-            _context2.next = 11;
+            _context2.next = 10;
             return new __WEBPACK_IMPORTED_MODULE_2_nuxt__["Builder"](nuxt).build();
 
-          case 11:
+          case 10:
 
             app.use(__WEBPACK_IMPORTED_MODULE_3_leanengine__["koa"]());
             app.use(function () {
@@ -221,10 +220,10 @@ var start = function () {
               };
             }());
 
-            app.listen(port, host);
-            console.log('Server listening on ' + host + ':' + port); // eslint-disable-line no-console
+            app.listen(port);
+            console.log('Server listening on port:' + port); // eslint-disable-line no-console
 
-          case 15:
+          case 14:
           case 'end':
             return _context2.stop();
         }
