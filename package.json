@@ -1,30 +1,35 @@
 {
-  "name": "leancloud-nodejs",
+  "name": "nuxt-koa",
   "version": "1.0.0",
-  "description": "server in nodejs",
-  "main": "server.js",
-  "engines": {
-    "node": "8.x"
-  },
+  "description": "Nuxt.js project",
+  "author": "wangze <wangze@embway.com>",
+  "private": true,
   "scripts": {
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "backpack dev",
+    "build": "nuxt build && backpack build",
+    "start": "cross-env NODE_ENV=production node build/main.js",
+    "precommit": "npm run lint",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/see311/leancloud-nodejs.git"
-  },
-  "author": "zeratul",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/see311/leancloud-nodejs/issues"
-  },
-  "homepage": "https://github.com/see311/leancloud-nodejs#readme",
   "dependencies": {
-    "leanengine": "^3.0.2",
+    "cross-env": "^5.0.1",
+    "koa": "^2.4.1",
+    "nuxt": "^1.0.0-rc11",
+    "source-map-support": "^0.4.15",
     "leancloud-storage": "^3.3.1",
-    "koa": "^2.3.0",
-    "koa-body": "^2.3.0",
-    "koa-route": "^3.2.0"
+    "leanengine": "^3.0.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "backpack-core": "^0.3.0",
+    "eslint": "^3.13.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-html": "^2.0.3",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "nodemon": "^1.11.0",
+    "scmp": "^2.0.0"
   }
 }
