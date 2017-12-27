@@ -25,8 +25,8 @@ async function start() {
     await builder.build()
   }
 
-  app.use(AV.koa())
   app.use(async (ctx, next) => {
+    AV.koa2()
     await next()
     ctx.status = 200 // koa defaults to 404 when it sees that status is unset
     return new Promise((resolve, reject) => {

@@ -178,17 +178,17 @@ var start = function () {
 
           case 10:
 
-            app.use(__WEBPACK_IMPORTED_MODULE_3_leanengine__["koa"]());
             app.use(function () {
               var _ref2 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_D_works_leancloud_leancloud_nodejs_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(ctx, next) {
                 return __WEBPACK_IMPORTED_MODULE_0_D_works_leancloud_leancloud_nodejs_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
                   while (1) {
                     switch (_context.prev = _context.next) {
                       case 0:
-                        _context.next = 2;
+                        __WEBPACK_IMPORTED_MODULE_3_leanengine__["koa2"]();
+                        _context.next = 3;
                         return next();
 
-                      case 2:
+                      case 3:
                         ctx.status = 200; // koa defaults to 404 when it sees that status is unset
                         return _context.abrupt('return', new Promise(function (resolve, reject) {
                           ctx.res.on('close', resolve);
@@ -199,7 +199,7 @@ var start = function () {
                           });
                         }));
 
-                      case 4:
+                      case 5:
                       case 'end':
                         return _context.stop();
                     }
@@ -224,7 +224,7 @@ var start = function () {
               });
             });
 
-          case 13:
+          case 12:
           case 'end':
             return _context2.stop();
         }
