@@ -213,7 +213,7 @@ var start = function () {
             }());
 
             app.listen(port, function (err) {
-              console.log('Node app is running on port:', PORT);
+              console.log('Node app is running on port:', port);
 
               // 注册全局未捕获异常处理器
               process.on('uncaughtException', function (err) {
