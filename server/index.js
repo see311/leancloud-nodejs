@@ -1,9 +1,10 @@
 import Koa from 'koa'
 import { Nuxt, Builder } from 'nuxt'
-import * as AV from "leancloud-storage";
+import * as leanengine from "leanengine";
+import * as leanstorage from "leancloud-storage";
 
 async function start() {
-  AV.init({
+  leanengine.init({
     appId: process.env.LEANCLOUD_APP_ID,
     appKey: process.env.LEANCLOUD_APP_KEY,
     masterKey: process.env.LEANCLOUD_APP_MASTER_KEY
@@ -26,6 +27,7 @@ async function start() {
     await new Builder(nuxt).build()
   }
 
+  app.use(leanengine.koa())
   app.use(async (ctx, next) => {
     await next()
     ctx.status = 200 // koa defaults to 404 when it sees that status is unset
@@ -42,7 +44,7 @@ async function start() {
   app.listen(port, host)
   console.log('Server listening on ' + host + ':' + port) // eslint-disable-line no-console
 
-  const TestObject = AV.Object.extend('TestObject');
+  const TestObject = leanstorage.Object.extend('TestObject');
   const testObject = new TestObject();
   await testObject.save({ words: 'Hello World!' });
   console.log('LeanCloud Rocks!');
