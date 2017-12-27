@@ -65,7 +65,7 @@ module.exports =
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -95,7 +95,7 @@ module.exports = {
 /* 1 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(5);
+module.exports = __webpack_require__(6);
 
 
 /***/ },
@@ -114,16 +114,22 @@ module.exports = require("leancloud-storage");
 /* 4 */
 /***/ function(module, exports) {
 
-module.exports = require("nuxt");
+module.exports = require("leanengine");
 
 /***/ },
 /* 5 */
 /***/ function(module, exports) {
 
-module.exports = require("regenerator-runtime");
+module.exports = require("nuxt");
 
 /***/ },
 /* 6 */
+/***/ function(module, exports) {
+
+module.exports = require("regenerator-runtime");
+
+/***/ },
+/* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -132,22 +138,24 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_D_works_leancloud_leancloud_nodejs_node_modules_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_D_works_leancloud_leancloud_nodejs_node_modules_babel_runtime_regenerator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_koa__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_koa___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_koa__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_nuxt__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_nuxt__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_nuxt___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_nuxt__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_leancloud_storage__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_leancloud_storage___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_leancloud_storage__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_leanengine__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_leanengine___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_leanengine__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_leancloud_storage__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_leancloud_storage___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_leancloud_storage__);
 
 
 var start = function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_D_works_leancloud_leancloud_nodejs_node_modules_babel_runtime_regenerator___default.a.mark(function _callee2() {
     var _this = this;
 
-    var app, host, PORT, config, nuxt, builder, TestObject, testObject;
+    var app, host, port, config, nuxt, builder, TestObject, testObject;
     return __WEBPACK_IMPORTED_MODULE_0_D_works_leancloud_leancloud_nodejs_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
       while (1) {
         switch (_context2.prev = _context2.next) {
           case 0:
-            __WEBPACK_IMPORTED_MODULE_3_leancloud_storage__["init"]({
+            __WEBPACK_IMPORTED_MODULE_3_leanengine__["init"]({
               appId: process.env.LEANCLOUD_APP_ID,
               appKey: process.env.LEANCLOUD_APP_KEY,
               masterKey: process.env.LEANCLOUD_APP_MASTER_KEY
@@ -155,7 +163,7 @@ var start = function () {
 
             app = new __WEBPACK_IMPORTED_MODULE_1_koa___default.a();
             host = process.env.HOST || '0.0.0.0' || '127.0.0.1';
-            PORT = parseInt(process.env.LEANCLOUD_APP_PORT || process.env.PORT || 3000);
+            port = parseInt(process.env.LEANCLOUD_APP_PORT || process.env.PORT || 3000);
 
             // Import and Set Nuxt.js options
 
@@ -179,6 +187,7 @@ var start = function () {
 
           case 11:
 
+            app.use(__WEBPACK_IMPORTED_MODULE_3_leanengine__["koa"]());
             app.use(function () {
               var _ref2 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_D_works_leancloud_leancloud_nodejs_node_modules_babel_runtime_regenerator___default.a.mark(function _callee(ctx, next) {
                 return __WEBPACK_IMPORTED_MODULE_0_D_works_leancloud_leancloud_nodejs_node_modules_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
@@ -215,15 +224,15 @@ var start = function () {
             app.listen(port, host);
             console.log('Server listening on ' + host + ':' + port); // eslint-disable-line no-console
 
-            TestObject = __WEBPACK_IMPORTED_MODULE_3_leancloud_storage__["Object"].extend('TestObject');
+            TestObject = __WEBPACK_IMPORTED_MODULE_4_leancloud_storage__["Object"].extend('TestObject');
             testObject = new TestObject();
-            _context2.next = 18;
+            _context2.next = 19;
             return testObject.save({ words: 'Hello World!' });
 
-          case 18:
+          case 19:
             console.log('LeanCloud Rocks!');
 
-          case 19:
+          case 20:
           case 'end':
             return _context2.stop();
         }
@@ -237,6 +246,7 @@ var start = function () {
 }();
 
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
+
 
 
 

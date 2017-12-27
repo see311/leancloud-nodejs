@@ -12,7 +12,7 @@ async function start() {
 
   const app = new Koa()
   const host = process.env.HOST || '0.0.0.0' || '127.0.0.1'
-  const PORT = parseInt(process.env.LEANCLOUD_APP_PORT || process.env.PORT || 3000)
+  const port = parseInt(process.env.LEANCLOUD_APP_PORT || process.env.PORT || 3000)
 
   // Import and Set Nuxt.js options
   let config = require('../nuxt.config.js')
