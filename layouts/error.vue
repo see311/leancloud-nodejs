@@ -19,6 +19,12 @@ export default {
 </script>
 
 <style scoped>
+.container{
+  margin: 0;
+  width: 100%;
+  padding: 100px 0;
+  text-align: center;
+}
 .title
 {
   margin-top: 15px;
@@ -30,8 +36,21 @@ export default {
   color: #9aabb1;
   margin: 0;
 }
-.button
+.button, .button:visited
 {
-  margin-top: 50px;
+  display: inline-block;
+  color: #3B8070;
+  letter-spacing: 1px;
+  background-color: #fff;
+  border: 2px solid #3B8070;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 45px;
+}
+
+.button:hover, .button:focus
+{
+  color: #fff;
+  background-color: #3B8070;
 }
 </style>

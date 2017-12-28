@@ -1,6 +1,14 @@
 # dependencies
 node_modules
 
+# nuxt dev
+assets
+components
+layouts
+pages
+server
+static
+
 # logs
 npm-debug.log
 
