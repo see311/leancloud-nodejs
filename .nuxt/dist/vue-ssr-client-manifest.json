@@ -7,23 +7,23 @@
     "pages\\index.d6fedb0f05e1f2a5ce5b.js",
     "layouts\\default.2ffb6aabf23bead49f85.js",
     "pages\\about.0d35bb0122ba5f948144.js",
-    "app.c54cf3599660fc078c24.js",
+    "app.6d3992eb4398216dc3f8.js",
     "common.a51e58ecbc2013980a50.js",
-    "manifest.35170b2ab52b55983630.js",
+    "manifest.718e864f13446be1d8fc.js",
     "img/1.12e5b75.jpg",
     "pages\\index.d6fedb0f05e1f2a5ce5b.js.map",
     "layouts\\default.2ffb6aabf23bead49f85.js.map",
     "pages\\about.0d35bb0122ba5f948144.js.map",
-    "app.c54cf3599660fc078c24.js.map",
+    "app.6d3992eb4398216dc3f8.js.map",
     "common.a51e58ecbc2013980a50.js.map",
-    "manifest.35170b2ab52b55983630.js.map",
+    "manifest.718e864f13446be1d8fc.js.map",
     "index.spa.html",
     "index.ssr.html"
   ],
   "initial": [
-    "manifest.35170b2ab52b55983630.js",
+    "manifest.718e864f13446be1d8fc.js",
     "common.a51e58ecbc2013980a50.js",
-    "app.c54cf3599660fc078c24.js"
+    "app.6d3992eb4398216dc3f8.js"
   ],
   "async": [
     "pages\\index.d6fedb0f05e1f2a5ce5b.js",
