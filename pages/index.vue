@@ -6,8 +6,8 @@
     <h2>vue-awesome-swiper ssr</h2>
     <div>
       <div v-swiper:mySwiper="swiperOption">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide" v-for="banner in banners" :key="banner">
+        <div class="swiper-wrapper my-swiper">
+          <div class="swiper-slide my-slide" v-for="banner in banners" :key="banner">
             <img :src="banner">
           </div>
         </div>
