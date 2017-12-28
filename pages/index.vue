@@ -24,7 +24,11 @@
 export default {
   data() {
     return {
-      banners: ["assets/img/1.jpg", "assets/img/2.jpg", "assets/img/3.jpg"],
+      banners: [
+        "../assets/img/1.jpg",
+        "../assets/img/2.jpg",
+        "../assets/img/3.jpg"
+      ],
       swiperOption: {
         loop: true,
         slidesPerView: "auto",
