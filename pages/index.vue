@@ -25,9 +25,9 @@ export default {
   data() {
     return {
       banners: [
-        "../assets/img/1.jpg",
-        "../assets/img/2.jpg",
-        "../assets/img/3.jpg"
+        require("../assets/img/1.jpg"),
+        require("../assets/img/2.jpg"),
+        require("../assets/img/3.jpg")
       ],
       swiperOption: {
         loop: true,
@@ -56,9 +56,7 @@ export default {
     console.log(
       "This is current swiper instance object",
       this.mySwiper,
-      "I will slideTo banners 3"
     );
-    this.mySwiper.slideTo(3);
   }
 };
 </script>
