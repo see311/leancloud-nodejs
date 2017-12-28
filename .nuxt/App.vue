@@ -11,6 +11,8 @@ import NuxtLoading from './components/nuxt-loading.vue'
 
 import '..\\assets\\css\\main.css'
 
+import '..\\node_modules\\swiper\\dist\\css\\swiper.css'
+
 
 let layouts = {
 

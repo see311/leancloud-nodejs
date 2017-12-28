@@ -17,10 +17,11 @@
   "dependencies": {
     "cross-env": "^5.0.1",
     "koa": "^2.4.1",
+    "leancloud-storage": "^3.3.1",
+    "leanengine": "^3.0.2",
     "nuxt": "^1.0.0-rc11",
     "source-map-support": "^0.4.15",
-    "leancloud-storage": "^3.3.1",
-    "leanengine": "^3.0.2"
+    "vue-awesome-swiper": "^3.0.6"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",

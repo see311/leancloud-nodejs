@@ -13,10 +13,16 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  plugins: [
+    { src: '~/plugins/vue-awesome-swiper.js', ssr: false },
+  ],
   /*
   ** Global CSS
   */
-  css: ['~assets/css/main.css'],
+  css: [
+    '~assets/css/main.css',
+    'swiper/dist/css/swiper.css'
+  ],
   /*
   ** Customize the progress-bar color
   */
