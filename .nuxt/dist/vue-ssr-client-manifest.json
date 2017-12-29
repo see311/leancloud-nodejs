@@ -2,31 +2,31 @@
   "publicPath": "/_nuxt/",
   "all": [
     "LICENSES",
-    "img/3.f4efb09.jpg",
+    "img/3.fe8c1b0.jpg",
     "img/2.f4ff75f.jpg",
-    "pages\\index.2572e98b34ff8d158c25.js",
+    "pages\\index.d6ab5e6ff56f9d1bfaf7.js",
     "layouts\\default.2ffb6aabf23bead49f85.js",
     "pages\\about.0d35bb0122ba5f948144.js",
-    "app.081ebb1be3325b79f864.js",
-    "common.a51e58ecbc2013980a50.js",
-    "manifest.45e6d9c6760b5a2824ba.js",
+    "app.c5bfa90c145245239e0a.js",
+    "common.6e0b44351863e8555a31.js",
+    "manifest.605e70912e76a229c552.js",
     "img/1.12e5b75.jpg",
-    "pages\\index.2572e98b34ff8d158c25.js.map",
+    "pages\\index.d6ab5e6ff56f9d1bfaf7.js.map",
     "layouts\\default.2ffb6aabf23bead49f85.js.map",
     "pages\\about.0d35bb0122ba5f948144.js.map",
-    "app.081ebb1be3325b79f864.js.map",
-    "common.a51e58ecbc2013980a50.js.map",
-    "manifest.45e6d9c6760b5a2824ba.js.map",
+    "app.c5bfa90c145245239e0a.js.map",
+    "common.6e0b44351863e8555a31.js.map",
+    "manifest.605e70912e76a229c552.js.map",
     "index.spa.html",
     "index.ssr.html"
   ],
   "initial": [
-    "manifest.45e6d9c6760b5a2824ba.js",
-    "common.a51e58ecbc2013980a50.js",
-    "app.081ebb1be3325b79f864.js"
+    "manifest.605e70912e76a229c552.js",
+    "common.6e0b44351863e8555a31.js",
+    "app.c5bfa90c145245239e0a.js"
   ],
   "async": [
-    "pages\\index.2572e98b34ff8d158c25.js",
+    "pages\\index.d6ab5e6ff56f9d1bfaf7.js",
     "layouts\\default.2ffb6aabf23bead49f85.js",
     "pages\\about.0d35bb0122ba5f948144.js"
   ],
@@ -38,6 +38,10 @@
     "63753307": [
       6,
       13
+    ],
+    "68332882": [
+      7,
+      14
     ],
     "68631691": [
       6,
@@ -125,16 +129,16 @@
       6,
       13
     ],
-    "45a5fac6": [
-      6,
-      13
-    ],
-    "82f28d18": [
+    "d242297e": [
       3,
       10,
       1,
       9,
       2
+    ],
+    "45a5fac6": [
+      6,
+      13
     ],
     "1b56eff4": [
       6,
@@ -143,6 +147,10 @@
     "40ede234": [
       6,
       13
+    ],
+    "15d83115": [
+      7,
+      14
     ],
     "2fbba59a": [
       6,
@@ -208,6 +216,13 @@
       6,
       13
     ],
+    "7d94f9bc": [
+      3,
+      10,
+      1,
+      9,
+      2
+    ],
     "36b4607d": [
       6,
       13
@@ -231,6 +246,13 @@
     "806719f2": [
       6,
       13
+    ],
+    "10be4078": [
+      3,
+      10,
+      1,
+      9,
+      2
     ],
     "2ab4aefe": [
       6,
@@ -404,6 +426,10 @@
       6,
       13
     ],
+    "55fff48f": [
+      6,
+      13
+    ],
     "7a59017e": [
       6,
       13
@@ -470,13 +496,6 @@
     "6a2496e4": [
       6,
       13
-    ],
-    "38660eab": [
-      3,
-      10,
-      1,
-      9,
-      2
     ],
     "30f99daa": [
       6,
@@ -556,13 +575,6 @@
       6,
       13
     ],
-    "76fab2ae": [
-      3,
-      10,
-      1,
-      9,
-      2
-    ],
     "4915ff53": [
       4,
       11
@@ -578,14 +590,6 @@
     "f73993b6": [
       6,
       13
-    ],
-    "43b727a7": [
-      6,
-      13
-    ],
-    "2ea586e5": [
-      7,
-      14
     ],
     "7725e6c3": [
       6,
@@ -707,6 +711,10 @@
       6,
       13
     ],
+    "43b727a7": [
+      6,
+      13
+    ],
     "6eed2eac": [
       6,
       13
@@ -714,6 +722,10 @@
     "76d39fd0": [
       6,
       13
+    ],
+    "14572e43": [
+      7,
+      14
     ],
     "1f38f440": [
       4,

@@ -1,3 +1,4 @@
+var resolve = require('path').resolve
 module.exports = {
   /*
   ** Headers of the page
@@ -13,8 +14,12 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  build: {
+    vendor: ['vue-notifications', 'vue-awesome-swiper'],
+  },
   plugins: [
     { src: '~/plugins/vue-awesome-swiper.js', ssr: false },
+    { src: '~/plugins/vue-notifications.js', ssr: false },
   ],
   /*
   ** Global CSS

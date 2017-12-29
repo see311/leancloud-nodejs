@@ -65,13 +65,14 @@ module.exports =
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
+var resolve = __webpack_require__(5).resolve;
 module.exports = {
   /*
   ** Headers of the page
@@ -81,7 +82,10 @@ module.exports = {
     meta: [{ charset: 'utf-8' }, { name: 'viewport', content: 'width=device-width, initial-scale=1' }, { hid: 'description', name: 'description', content: 'Nuxt.js project' }],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
-  plugins: [{ src: '~/plugins/vue-awesome-swiper.js', ssr: false }],
+  build: {
+    vendor: ['vue-notifications', 'vue-awesome-swiper']
+  },
+  plugins: [{ src: '~/plugins/vue-awesome-swiper.js', ssr: false }, { src: '~/plugins/vue-notifications.js', ssr: false }],
   /*
   ** Global CSS
   */
@@ -96,7 +100,7 @@ module.exports = {
 /* 1 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(5);
+module.exports = __webpack_require__(6);
 
 
 /***/ },
@@ -121,10 +125,16 @@ module.exports = require("nuxt");
 /* 5 */
 /***/ function(module, exports) {
 
-module.exports = require("regenerator-runtime");
+module.exports = require("path");
 
 /***/ },
 /* 6 */
+/***/ function(module, exports) {
+
+module.exports = require("regenerator-runtime");
+
+/***/ },
+/* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
