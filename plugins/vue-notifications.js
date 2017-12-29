@@ -11,4 +11,4 @@ import VueNotifications from 'vue-notifications'
 //   info: toast,
 //   warn: toast
 // }
-Vue.use(VueNotifications, options)
+Vue.use(VueNotifications/*, options*/)
